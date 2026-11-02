@@ -1,12 +1,14 @@
-# novita-ci-demo
+# sandbox-cookbook
 
-Three tiny calculator demos (Go / Python / JavaScript), each with its own
-GitHub Actions workflow running on `runs-on: novita-scale-set`.
+Hands-on demos for [Novita Sandbox](https://novita.ai), covering how to plug
+sandboxes into common developer workflows such as CI, agent tool execution, and
+isolated code evaluation. Every demo is a self-contained directory with its own
+README that explains what it shows and how to run it.
 
-| Dir            | Lint                            | Test                   | Workflow                       |
-|----------------|---------------------------------|------------------------|--------------------------------|
-| `go-demo/`     | gofmt, go vet, staticcheck      | `go test -race -cover` | `.github/workflows/go.yml`     |
-| `python-demo/` | ruff check, ruff format --check | `pytest` (3.10–3.12)   | `.github/workflows/python.yml` |
-| `js-demo/`     | eslint                          | `node --test` (20, 22) | `.github/workflows/js.yml`     |
+## Demos
 
-Each workflow only triggers when its own directory (or workflow file) changes.
+| Demo | Description | Docs |
+|------|-------------|------|
+| [`github-ci/`](github-ci/) | Run GitHub Actions jobs on Novita Sandbox via a self-hosted runner scale set. | [GitHub CI Guide](https://docs.novita.ai/guides/sandbox-integrations-github-actions-runner) |
+
+More demos are on the way.
