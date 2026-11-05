@@ -1,6 +1,6 @@
 # sandbox-cookbook
 
-Hands-on demos for [Novita Sandbox](https://novita.ai), covering how to plug
+Hands-on demos for [Novita Sandbox](https://novita.ai/sandbox), covering how to plug
 sandboxes into common developer workflows such as CI, agent tool execution, and
 isolated code evaluation. Every demo is a self-contained directory with its own
 README that explains what it shows and how to run it.
